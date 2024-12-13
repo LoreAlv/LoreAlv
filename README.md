@@ -1,17 +1,15 @@
-# portfolio
+# Portfolio
 
 ## Mi portafolio personal
-
----
+Creando la base para mi portfolio
 
 ## Cursos
 
-### The Complete 2024 Web Development Bootcamp\*\*
+### \* The Complete 2024 Web Development Bootcamp
 
 Empezado en septiembre del 2024.
 HTML y CSS. Flex, grid y boostrap.
 
----
 
 ## Modificaciones
 
