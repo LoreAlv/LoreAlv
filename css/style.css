@@ -1,0 +1,12 @@
+#menu {
+    background-color: #ffc470;
+}
+
+#portada {
+    background-color: #4793af;
+}
+
+.bg-body-tertiary {
+    --bs-bg-opacity: 1;
+    background-color: rgba(#ffc470, var(--bs-bg-opacity)) !important;
+}
