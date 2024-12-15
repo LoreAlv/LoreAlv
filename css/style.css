@@ -6,6 +6,11 @@
     background-color: #4793af;
 }
 
+#menu .dropdown-item
+{
+    display: flex;
+}
+
 .bg-body-tertiary {
     --bs-bg-opacity: 1;
     background-color: rgba(#ffc470, var(--bs-bg-opacity)) !important;
