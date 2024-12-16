@@ -24,9 +24,20 @@
                         <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown"
                             aria-expanded="false">Languages</a>
                         <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="#">English</a></li>
-                            <li><a class="dropdown-item" href="#">Català</a></li>
-                            <li><a class="dropdown-item" href="#">Castellano</a></li>
+                            <li><a class="dropdown-item selected disabled" href="javascript:cambiarIdioma('en')"
+                                    aria-disabled="true"><img src="../images/gb.png" alt="English">
+                                    <p>English</p>
+                                </a>
+                            </li>
+                            <li><a class="dropdown-item" href="javascript:cambiarIdioma('ca')"><img
+                                        src="../images/ca.png" alt="Català">
+                                    <p>Català</p>
+                                </a>
+                            </li>
+                            <li><a class="dropdown-item" href="javascript:cambiarIdioma('es')"><img
+                                        src="../images/es.png" alt="Castellano">
+                                    <p>Castellano</p>
+                                </a></li>
                         </ul>
                     </li>
                 </ul>

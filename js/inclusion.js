@@ -7,8 +7,6 @@ function includeHTML() {
         elmnt = z[i];
         /*search for elements with a certain atrribute:*/
         file = ".\\" + idioma + "\\" + elmnt.getAttribute("w3-include-html");
-        console.log(file);
-
         if (file && file != ".\\" + idioma + "\\null") {
             /* Make an HTTP request using the attribute value as the file name: */
             xhttp = new XMLHttpRequest();

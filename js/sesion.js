@@ -1,6 +1,6 @@
 const langsBrowser = navigator.languages;
 const idiomesWeb = ["en", "ca", "es"];
-let idiomaDefecto = "en";
+const idiomaDefecto = "en";
 let idioma = "en";
 
 function obtenerIdioma() {
@@ -25,9 +25,26 @@ function obtenerIdioma() {
         idioma = idiomaDefecto;
     }
     localStorage.setItem("idioma", idioma);
+    location.replace(".\\" + idioma + "\\index.html");
     return idioma;
 }
 
 function cambiarIdioma(params) {
     localStorage.setItem("idioma", params);
+    location.reload();
+}
+
+const paginaDefecto = "#menuHome";
+let pagina = paginaDefecto;
+function obtenerPagina() {
+    const pag = localStorage.getItem("page");
+    if (pag) {
+        //hay pagina  guardada
+        pagina = pag;
+    }
+    localStorage.setItem("page", pagina);
+}
+
+function cambiarPagina(params) {
+    localStorage.setItem("page", param);
 }
