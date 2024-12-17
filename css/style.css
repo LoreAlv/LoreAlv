@@ -24,6 +24,21 @@
     align-content: flex-start;
 }
 
+#btn-back-to-top {
+    border-radius: 50%;
+    opacity: 0.5;
+    z-index: 0;
+}
+
+#btn-back-to-top:hover,
+#btn-back-to-top:active {
+    opacity: 1;
+}
+
+.card-header,
+.card {
+    border-radius: 10px;
+}
 .menu-pastilla i {
     font-size: 20px;
 }
