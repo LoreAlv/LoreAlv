@@ -12,12 +12,37 @@
     letter-spacing: -2px;
 }
 
-#menu {
-    background-color: #ffc470;
+.gradiente {
+    background: linear-gradient(90deg, rgba(var(--bs-primary-rgb), 0.85), rgba(var(--bs-primary-rgb), 1), var(--bs-primary-bg-subtle));
+    /* background: linear-gradient(90deg, #104daa, #2981a1, #8aceef); */
+    background-size: 180% 180%;
+    animation: gradient-animation 18s ease infinite;
 }
 
-#portada {
-    background-color: #4793af;
+@media (prefers-color-scheme: dark) {
+    .gradiente {
+        background-color: #4793af;
+        background-size: 180% 180%;
+        animation: gradient-animation 18s ease infinite;
+    }
+}
+@media (prefers-color-scheme: light) {
+    .gradiente {
+        background: linear-gradient(90deg, rgba(var(--bs-primary-rgb), 0.85), rgba(var(--bs-primary-rgb), 1), var(--bs-primary-bg-subtle));
+        background-size: 180% 180%;
+        animation: gradient-animation 18s ease infinite;
+    }
+}
+@keyframes gradient-animation {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
 }
 
 #menu .dropdown-item {
