@@ -1,0 +1,110 @@
+{
+    "ca": {
+        "title": "Portfoli de LoreAlv",
+        "menuQui": "Qui sóc?",
+        "menuConeixements": "Coneixements",
+        "menuProjectes": "Projectes",
+        "menuContacte": "Contacta'm",
+        "menuIdioma": "Idiomes",
+
+        "presentacioPortada": "<em>Crea el teu camí, <br>impulsa els teus somnis,<br> inspira el món.</em>",
+
+        "titolQui": "Qui sóc?",
+        "textQui": "Sóc enginyera superior en informàtica per la FIB (UPC) i em dedico professionalment a fer desenvolupaments WEB i Java.",
+
+        "titolContacte": "Vols contactar amb mi?",
+        "text1Contacte": "Si estàs buscant una professional apassionada, compromesa i amb ganes d’aportar valor, parlem-ne.",
+        "text2Contacte": "Em trobaràs disposada a explorar noves oportunitats, projectes i col·laboracions que representin un repte i em permetin créixer.",
+        "text3Contacte": "Cada proposta o idea és una oportunitat de construir junts. Escriu-me i estaré encantada de parlar amb tu!",
+        "emailContacte": "<i class=\"bi bi-envelope-open fs-4\"></i> Correu electrònic",
+        "linkedinContacte": "<a class=\"text-body-secondary text-decoration-none\" href=\"https://www.linkedin.com/in/lorena-alvarez/\" target=\"_blank\"><i class=\"bi bi-linkedin fs-4\"></i> LinkedIn</a>: Connecta amb mi per veure la meva trajectòria i projectes recents.",
+
+        "titolConeixements": "Els meus coneixements",
+        "textPrincipalConeixements": "M'encanta adquirir nous coneixements, experimentar i estudiar. Aquesta secció només parla del que he après al curs <b>\"The Complete 2024 Web Development Bootcamp\"</b> de la Dra. Angela Wu a Udemy. Potser en algun moment el podré ampliar amb els reals.",
+        "textLateralConeixements": "Pots veure <em>quasi tots</em> els meus coneixements al meu perfil de LinkedIn. Realment he treballat amb més tecnologies. I si no hi he treballat, n'aprenc.",
+        "botoConeixments": "<i class=\"bi bi-linkedin fs-4\"></i> Anar-hi",
+        "htmlConeixements": "La base de tota pàgina web, el llenguatge de marcatge estàndard per a la creació de pàgines web. Serien els totxos de la pàgina.",
+        "cssConeixements": "El llenguatge de disseny per a la presentació de pàgines web. El maquillatge de les pàgines web, per fer-les útils, agradables i boniques als usuaris.",
+        "jsConeixements": "El llenguatge de programació que permet fer pàgines web interactives. És el cervell de la pàgina.",
+        "reactConeixements": "Una llibreria de JavaScript per a la creació d'interfícies ràpides i dinàmiques d'usuari. És com un conjunt de peces de Lego que ens permeten crear pàgines web més ràpidament.",
+
+        "titolProjectes": "Projectes",
+        "textProjectes": "Dins del curs <b>\"The Complete 2024 Web Development Bootcamp\"</b> impartit per la Dra. Angela Wu a Udemy, s'inclou l'exercici de crear un portafoli personal amb els projectes del curs i altres coses que fem. Aquí en tenim un petit tastet:",
+        "botoProjectes": "Veure",
+        "textProjecte1": "Replicar el quadre de Piet Mondrian \"Composition with Red, Blue and Yellow\" usant HTML, CSS i GRID.",
+        "textProjecte2": "Projecte consistent a replicar una pàgina web publicitària d'aplicació amb subscripció usant HTML, CSS i Bootstrap.",
+        "textProjecte3": "Aquesta és la pàgina que estàs veient ara mateix. Està feta amb HTML, CSS, Bootstrap i JavaScript."
+    },
+    "en": {
+        "title": "LoreAlv's Portfolio",
+        "menuQui": "About Me",
+        "menuConeixements": "Skills",
+        "menuProjectes": "Projects",
+        "menuContacte": "Contact Me",
+        "menuIdioma": "Languages",
+
+        "presentacioPortada": "<em>Create your path, <br>pursue your dreams,<br> inspire the world.</em>",
+
+        "titolQui": "About Me",
+        "textQui": "I am a computer engineer from FIB (UPC), specializing in WEB and Java development.",
+
+        "titolContacte": "Want to get in touch?",
+        "text1Contacte": "If you are looking for a passionate, committed professional ready to add value, let’s talk.",
+        "text2Contacte": "I’m open to exploring new opportunities, projects, and collaborations that challenge me and help me grow.",
+        "text3Contacte": "Every proposal or idea is an opportunity to build together. Write to me, and I’ll be happy to talk to you!",
+        "emailContacte": "<i class=\"bi bi-envelope-open fs-4\"></i> Email",
+        "linkedinContacte": "<a class=\"text-body-secondary text-decoration-none\" href=\"https://www.linkedin.com/in/lorena-alvarez/\" target=\"_blank\"><i class=\"bi bi-linkedin fs-4\"></i> LinkedIn</a>: Connect with me to see my background and recent projects.",
+
+        "titolConeixements": "My Skills",
+        "textPrincipalConeixements": "I love acquiring new knowledge, experimenting, and studying. This section only covers what I learned in the course <b>\"The Complete 2024 Web Development Bootcamp\"</b> by Dr. Angela Wu on Udemy. I may expand it with real-world examples in the future.",
+        "textLateralConeixements": "You can see <em>almost all</em> my skills on my LinkedIn profile. I have worked with more technologies. And if I haven't, I’m willing to learn.",
+        "botoConeixments": "<i class=\"bi bi-linkedin fs-4\"></i> Visit",
+        "htmlConeixements": "The foundation of any webpage, the standard markup language for creating websites. It’s like the bricks of a webpage.",
+        "cssConeixements": "The design language for webpage styling. The makeup of web pages, making them useful, pleasant, and beautiful for users.",
+        "jsConeixements": "The programming language that enables interactive web pages. It's the brain of the webpage.",
+        "reactConeixements": "A JavaScript library for building fast and dynamic user interfaces. It’s like a set of Lego pieces for creating web pages faster.",
+
+        "titolProjectes": "Projects",
+        "textProjectes": "As part of the course <b>\"The Complete 2024 Web Development Bootcamp\"</b> by Dr. Angela Wu on Udemy, I created a personal portfolio featuring course projects and more. Here's a sneak peek:",
+        "botoProjectes": "View",
+        "textProjecte1": "Recreate Piet Mondrian's painting \"Composition with Red, Blue and Yellow\" using HTML, CSS, and GRID.",
+        "textProjecte2": "A project replicating a subscription-based app's promotional web page using HTML, CSS, and Bootstrap.",
+        "textProjecte3": "This is the webpage you're currently viewing. It was built with HTML, CSS, Bootstrap, and JavaScript."
+    },
+    "es": {
+        "title": "Portafolio de LoreAlv",
+        "menuQui": "¿Quién soy?",
+        "menuConeixements": "Conocimientos",
+        "menuProjectes": "Proyectos",
+        "menuContacte": "Contáctame",
+        "menuIdioma": "Idiomas",
+
+        "presentacioPortada": "<em>Crea tu camino, <br>impulsa tus sueños,<br> inspira al mundo.</em>",
+
+        "titolQui": "¿Quién soy?",
+        "textQui": "Soy ingeniera superior en informática por la FIB (UPC) y me dedico profesionalmente al desarrollo WEB y Java.",
+
+        "titolContacte": "¿Quieres contactar conmigo?",
+        "text1Contacte": "Si buscas una profesional apasionada, comprometida y con ganas de aportar valor, hablemos.",
+        "text2Contacte": "Estoy dispuesta a explorar nuevas oportunidades, proyectos y colaboraciones que me desafíen y me permitan crecer.",
+        "text3Contacte": "Cada propuesta o idea es una oportunidad para construir juntos. ¡Escríbeme y estaré encantada de hablar contigo!",
+        "emailContacte": "<i class=\"bi bi-envelope-open fs-4\"></i> Correo electrónico",
+        "linkedinContacte": "<a class=\"text-body-secondary text-decoration-none\" href=\"https://www.linkedin.com/in/lorena-alvarez/\" target=\"_blank\"><i class=\"bi bi-linkedin fs-4\"></i> LinkedIn</a>: Conecta conmigo para ver mi trayectoria y proyectos recientes.",
+
+        "titolConeixements": "Mis conocimientos",
+        "textPrincipalConeixements": "Me encanta adquirir nuevos conocimientos, experimentar y estudiar. Esta sección solo cubre lo que aprendí en el curso <b>\"The Complete 2024 Web Development Bootcamp\"</b> de la Dra. Angela Wu en Udemy. Quizás en algún momento lo amplíe con ejemplos reales.",
+        "textLateralConeixements": "Puedes ver <em>casi todos</em> mis conocimientos en mi perfil de LinkedIn. He trabajado con más tecnologías. Y si no lo he hecho, aprendo.",
+        "botoConeixments": "<i class=\"bi bi-linkedin fs-4\"></i> Ir",
+        "htmlConeixements": "La base de cualquier página web, el lenguaje estándar de marcado para la creación de sitios web. Serían los ladrillos de la página.",
+        "cssConeixements": "El lenguaje de diseño para la presentación de páginas web. El maquillaje de las páginas, para hacerlas útiles, agradables y bonitas para los usuarios.",
+        "jsConeixements": "El lenguaje de programación que permite crear páginas web interactivas. Es el cerebro de la página.",
+        "reactConeixements": "Una librería de JavaScript para crear interfaces rápidas y dinámicas de usuario. Es como un conjunto de piezas de Lego que permite crear páginas web más rápido.",
+
+        "titolProjectes": "Proyectos",
+        "textProjectes": "Como parte del curso <b>\"The Complete 2024 Web Development Bootcamp\"</b> impartido por la Dra. Angela Wu en Udemy, incluí el ejercicio de crear un portafolio personal con los proyectos del curso y otras cosas que hicimos. Aquí tienes un pequeño adelanto:",
+        "botoProjectes": "Ver",
+        "textProjecte1": "Recrear el cuadro de Piet Mondrian \"Composition with Red, Blue and Yellow\" usando HTML, CSS y GRID.",
+        "textProjecte2": "Proyecto consistente en replicar una página web publicitaria de aplicación con suscripción usando HTML, CSS y Bootstrap.",
+        "textProjecte3": "Esta es la página que estás viendo ahora mismo. Está hecha con HTML, CSS, Bootstrap y JavaScript."
+    }
+}

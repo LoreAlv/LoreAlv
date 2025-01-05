@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ca">
 
 <head>
     <meta charset="UTF-8">
@@ -8,27 +8,428 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alice&display=swap" rel="stylesheet">
     <script src="./js/sesion.js"></script>
     <script>const lang = obtenerIdioma();
+        document.addEventListener('DOMContentLoaded', (event) => {
+            const htmlElement = document.documentElement;
+            const switchElement = document.getElementById('darkModeSwitch');
+
+            // Set the default theme to dark if no setting is found in local storage
+            const currentTheme = localStorage.getItem('bsTheme') || 'dark';
+            htmlElement.setAttribute('data-bs-theme', currentTheme);
+            switchElement.checked = currentTheme === 'dark';
+
+            switchElement.addEventListener('change', function () {
+                if (this.checked) {
+                    htmlElement.setAttribute('data-bs-theme', 'dark');
+                    localStorage.setItem('bsTheme', 'dark');
+                } else {
+                    htmlElement.setAttribute('data-bs-theme', 'light');
+                    localStorage.setItem('bsTheme', 'light');
+                }
+            });
+            renderPage(lang);
+        });
     </script>
 </head>
 
 <body>
-    <div w3-include-html="menu.html"></div>
-    <script>
-        const paginaActiva = localStorage.getItem('page')
-        console.log(paginaActiva);
-        if (paginaActiva) {
+    <div class="position-fixed superior">
+        <!-- Back to top button -->
+        <a href="#menu" class="btn btn-danger btn-lg position-fixed mx-2 my-2 bottom-0 end-0  rounded-circle"
+            id="btn-back-to-top">
+            <i class="bi bi-chevron-bar-up"></i>
+        </a>
+    </div>
+    <section id="menu" class="text-bg-primary">
+        <nav class="navbar navbar-expand-lg bg-body-tertiary rounded" aria-label="Eleventh navbar example">
+            <div class="container-xxl">
+                <a class="navbar-brand alice-regular juntito fs-2" href="#">
+                    <img src="../images/logoLoreAlv.png" alt="LoreAlv" height="100px">
+                    LoreAlv</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarsExample09" aria-controls="navbarsExample09" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
 
-            var pastilla = document.querySelector(paginaActiva);
-            pastilla.classList.add("text-bg-secondary")
-            // < i class="bi bi-phone-vibrate-fill" ></i >
-        }
+                <div class="collapse navbar-collapse" id="navbarsExample09">
+                    <ul class="navbar-nav mb-2 mb-lg-0 ">
+                        <li class="nav-item" id="menuHome">
+                            <a class="nav-link " href="#qui" id="menuQui">Qui sóc?</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#coneixements" id="menuConeixements">Coneixements</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#projectes" id="menuProjectes">Projectes</a>
+                        </li>
+                        <li class="nav-item menu-pastilla">
+                            <a class="nav-link" href="#contacte" id="menuContacte"><i class="bi bi-phone"></i>
+                                Contacta'm
+                            </a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class=" nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown"
+                                aria-expanded="false" id="menuIdioma">Idiomes</a>
+                            <ul class="dropdown-menu ms-auto">
+                                <li><a class="dropdown-item" href="javascript:cambiarIdioma('en')"><img
+                                            src="../images/gb.png" alt="English">
+                                        <p>English</p>
+                                    </a>
+                                </li>
+                                <li><a class="dropdown-item" href="javascript:cambiarIdioma('ca')"><img
+                                            src="../images/ca.png" alt="Català">
+                                        <p>Català</p>
+                                    </a>
+                                </li>
+                                <li><a class="dropdown-item" href="javascript:cambiarIdioma('es')"><img
+                                            src="../images/es.png" alt="Castellano">
+                                        <p>Castellano</p>
+                                    </a></li>
+                            </ul>
+                        </li>
 
-    </script>
-    <div w3-include-html="portada.html"></div>
-    <script src="./js/inclusion.js"></script>
+                        <li class="nav-item">
+
+                            <i class="bi bi-sun-fill"></i>
+                            <div class="form-check form-switch form-check-inline">
+                                <input class="form-check-input" type="checkbox" id="darkModeSwitch" checked>
+                                <label class="form-check-label" for="darkModeSwitch"><i
+                                        class="bi bi-moon-fill"></i></label>
+
+                            </div>
+                        </li>
+                    </ul>
+
+                    <hr class="d-lg-none text-white-50">
+
+                    <ul class="navbar-nav flex-row flex-wrap ms-md-auto">
+                        <li class="nav-item py-2 py-lg-1 col-12 col-lg-auto">
+                            <div class="vr d-none d-lg-flex h-100 mx-lg-2 text-white"></div>
+                            <hr class="d-lg-none my-2 text-white-50">
+                        </li>
+                        <li class="nav-item col-6 col-lg-auto">
+                            <a class="nav-link py-2 px-0 px-lg-2 fs-4" href="https://github.com/LoreAlv" target="_blank"
+                                rel="noopener">
+                                <i class="bi bi-github"></i>
+                                <small class="d-lg-none ms-2">GitHub</small>
+                            </a>
+                        </li>
+                        <li class="nav-item col-6 col-lg-auto">
+                            <a class="nav-link py-2 px-0 px-lg-2 fs-4"
+                                href="https://www.linkedin.com/in/lorena-alvarez/" target="_blank" rel="noopener">
+                                <i class="bi bi-linkedin"></i>
+                                <small class="d-lg-none ms-2">LinkedIn</small>
+                            </a>
+                        </li>
+                        <li class="nav-item col-6 col-lg-auto">
+                            <a class="nav-link py-2 px-0 px-lg-2 fs-4"
+                                href="https://bsky.app/profile/lore-alv.bsky.social" target="_blank" rel="noopener">
+                                <i class="fa-brands fa-bluesky"></i>
+                                <small class="d-lg-none ms-2">Bluesky</small>
+                            </a>
+                        </li>
+                        <li class="nav-item py-2 py-lg-1 col-12 col-lg-auto">
+                            <div class="vr d-none d-lg-flex h-100 mx-lg-2 text-white"></div>
+                            <hr class="d-lg-none my-2 text-white-50">
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </section>
+    <section id="portada" class="text-bg-primary">
+        <div class="container col-xxl-8 px-4 pt-5">
+            <div class="row flex-lg-row-reverse align-items-center g-5">
+                <div class="col-10 col-sm-8 col-lg-6">
+                    <div class="overflow-hidden" style="max-height: 50vh;">
+                        <div class="container">
+                            <img src="../images/portada.png" class="d-block mx-lg-auto img-fluid rounded-3"
+                                alt="Bootstrap Themes" width="700" height="500" loading="lazy">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <h1 class="display-5 fw-bold lh-1 mb-3 alice-regular fs-1 juntito"
+                        style="font-size: 5rem !important;">
+                        Lorena Alvarez</h1>
+                    <p class="lead" id="presentacioPortada"><em>Crea el teu camí, <br>impulsa els teus somnis,<br>
+                            inspira el món.</em></p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="qui" class="text-center border-top container-xxl py-5">
+        <div class="row">
+            <div class="col-lg-7 col-md-8 mx-auto p-5 text-center bg-body-tertiary rounded-3">
+                <h1 class="fw-light" id="titolQui">Qui sóc?</h1>
+                <p id="textQui" class="lead lh-base fw-light fs-5  text-body-secondary text-start">Soc enginyera
+                    superior en
+                    informàtica per la FIB (UPC) i em dedico professionalment a
+                    fer
+                    desenvolupaments WEB i Java</p>
+            </div>
+        </div>
+    </section>
+    <section id="coneixements" class="border-top container-xxl py-5">
+        <div class="row text-center">
+            <div class="col-lg-7 col-md-8 mx-auto p-5 text-center bg-body-tertiary rounded-3">
+                <h1 class="fw-light" id="titolConeixements">Els meus coneixements</h1>
+                <p class="lead lh-base fw-light fs-5  text-body-secondary text-start" id="textPrincipalConeixements">
+                    M'encanta adquirir nous
+                    coneixements, experimentar i estudiar. Aquesta secció només parla del que he après al curs <b>"The
+                        Complete
+                        2024
+                        Web Development Bootcamp"</b> de la Dra. Angela Wu a Udemy potser en algun moment el podré
+                    ampliar amb els reals</p>
+            </div>
+        </div>
+        <div class="container  bg-body-tertiary">
+            <div class="row row-cols-1 row-cols-md-2 align-items-md-center g-5 py-5">
+                <div class="col d-flex flex-column align-items-start gap-2">
+                    <p id="textLateralConeixements" class="lead lh-base fw-light fs-5  text-body-secondary text-start">
+                        Pots veure <em>quasi tots</em>
+                        els meus coneixements al meu perfil de LinkedIn. Realment he treballat amb més tecnologies. I si
+                        no, aprenc.</p>
+                    <a class="btn btn-primary btn-lg text-decoration-none fs-6 fw-light"
+                        href="https://www.linkedin.com/in/lorena-alvarez/" target="_blank" id="botoConeixments"><i
+                            class="bi bi-linkedin fs-4"></i> anar-hi</a>
+                </div>
+
+                <div class="col">
+                    <div class="row row-cols-1 row-cols-sm-2 g-4">
+                        <div class="col d-flex flex-column gap-2">
+                            <div
+                                class="feature-icon-small d-inline-flex align-items-center justify-content-centerbg-gradient fs-4 ">
+                                <img src="../images/HTML5_Logo_128.png" alt="HTML5 logo" height="64px">
+                            </div>
+                            <h4 class="fw-semibold mb-0 text-body-emphasis fs-5">HTML5</h4>
+                            <p class="text-body-secondary fw-light  fs-6" id="htmlConeixements">La base de tota pàgina
+                                web, el llenguatge de
+                                marcatge
+                                estàndard
+                                per a
+                                la creació de pàgines web.</p>
+                            </p>
+                        </div>
+                        <div class="col d-flex flex-column gap-2">
+                            <div
+                                class="feature-icon-small d-inline-flex align-items-center justify-content-centerbg-gradient fs-4 ">
+                                <img src="../images/CSS3_logo_and_wordmark.svg.png" alt="CSS3 logo" height="64px">
+                            </div>
+                            <h4 class="fw-semibold mb-0 text-body-emphasis fs-5">CSS3</h4>
+                            <p class="text-body-secondary fw-light fs-6" id="cssConeixements">El maquillatge de les
+                                pàgines web, per fer-les
+                                útils,
+                                agradables i boniques als lectors.</p>
+                            </p>
+                        </div>
+                        <div class="col d-flex flex-column gap-2">
+                            <div
+                                class="feature-icon-small d-inline-flex align-items-center justify-content-centerbg-gradient fs-4 ">
+                                <img src="../images/JavaScript-logo.png" alt="Javascript Logo" height="64px">
+                            </div>
+                            <h4 class="fw-semibold mb-0 text-body-emphasis fs-5">Javascript</h4>
+                            <p class="text-body-secondary fw-light fs-6" id="jsConeixements">El dinamisme de les pàgines
+                                web, la forma
+                                d'interactuar amb els usuaris
+                            </p>
+                            </p>
+                        </div>
+                        <div class="col d-flex flex-column gap-2">
+                            <div
+                                class="feature-icon-small d-inline-flex align-items-center justify-content-centerbg-gradient fs-4 ">
+                                <img src="../images/React-icon.svg.png" alt="React logo" height="64px">
+                            </div>
+                            <h4 class="fw-semibold mb-0 text-body-emphasis fs-5">React</h4>
+                            <p class="text-body-secondary fw-light fs-6" id="reactConeixements">La llibreria de
+                                Javascript per a la creació
+                                d'interfícies d'usuari lleugeres i ràpides
+                            </p>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="projectes" class="text-center border-top container-xxl py-5">
+        <div class="row">
+            <div class="col-lg-7 col-md-8 mx-auto p-5">
+                <h1 class="fw-light" id="titolProjectes">Projectes</h1>
+                <p id="textProjectes" class="lead lh-base fw-light fs-5  text-body-secondary text-start">Dins del curs
+                    <b>"The Complete
+                        2024
+                        Web Development Bootcamp"</b> impartit per la Dra. Angela Wu a Udemy, s'inclou l'exercici
+                    de crear un portafoli personal amb els projectes del
+                    curs i altres coses que fem. Aquí en tenim un petit tastet:
+                </p>
+            </div>
+        </div>
+        <div class="album pb-5 bg-body-tertiary">
+            <div class="container">
+
+                <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+                    <div class="col">
+                        <div class="card shadow-sm border border-primary-subtle  h-100">
+                            <h5 class="card-header text-bg-secondary">The Mondrian Project</h5>
+                            <img class="card-img-top"
+                                src="../courses/Complete Web Development Bootcamp 2024/10.3 Mondrian Project/snapshot.png"
+                                alt="Snapshot del projecte">
+                            <div class="card-body">
+                                <p class="card-text lh-base fw-light fs-6  text-body-secondary " id="textProjecte1">
+                                    Replicar el quadre de
+                                    Piet Mondrian "Composition with Red, Blue
+                                    and
+                                    Yellow" usant HTML, CSS i GRID</p>
+                            </div>
+                            <div class="card-footer">
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="btn-group">
+                                        <a class="btn btn-sm btn-outline-primary lh-base fw-light fs-7  text-body-subtle-primary botoProjectes"
+                                            href="../courses/Complete Web Development Bootcamp 2024/10.3 Mondrian Project/index.html">View</a>
+
+                                    </div>
+                                    <small class="text-body-secondary d-flex gap-2"><span
+                                            class="badge d-flex align-items-center p-1 pe-2 text-primary-emphasis bg-primary-subtle  border border-primary-subtle rounded-pill">
+                                            CSS
+                                        </span>
+                                        <span
+                                            class="badge d-flex align-items-center p-1 pe-2 text-danger-emphasis bg-danger-subtle  border border-danger-subtle rounded-pill">
+                                            Grid
+                                        </span></small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card shadow-sm border border-primary-subtle  h-100">
+                            <h5 class="card-header text-bg-secondary">TinDog</h5>
+                            <img class="card-img-top"
+                                src="../courses/Complete Web Development Bootcamp 2024/11.3 TinDog Project/snapshot.png"
+                                alt="Snapshot del projecte">
+                            <div class="card-body">
+                                <p class="card-text lh-base fw-light fs-6  text-body-secondary" id="textProjecte2">
+                                    Projecte consistent a
+                                    replicar una pàgina Web publicitària
+                                    d'aplicació amb suscripció
+                                    usant HTML, CSS i Bootstrap</p>
+                            </div>
+                            <div class="card-footer">
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="btn-group">
+                                        <a class="btn btn-sm btn-outline-primary lh-base fw-light fs-7  text-body-subtle-primary botoProjectes"
+                                            href="../courses/Complete Web Development Bootcamp 2024/11.3 TinDog Project/index.html">View</a>
+
+                                    </div>
+                                    <small class="text-body-secondary d-flex gap-2"><span
+                                            class="badge d-flex align-items-center p-1 pe-2 text-primary-emphasis bg-primary-subtle border border-primary-subtle rounded-pill">
+                                            CSS
+                                        </span><span
+                                            class="badge d-flex align-items-center p-1 pe-2 text-success-emphasis bg-success-subtle  border border-success-subtle rounded-pill">
+                                            Bootstrap
+                                        </span></small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card shadow-sm border border-primary-subtle  h-100">
+                            <h5 class="card-header text-bg-secondary">Portfoli</h5>
+                            <img class="card-img-top" src="./images/logoLoreAlv.png" alt="Snapshot del projecte">
+                            <div class="card-body">
+                                <p class="card-text lh-base fw-light fs-6  text-body-secondary" id="textProjecte3">
+                            </div>
+                            <div class="card-footer">
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="btn-group">
+
+
+                                    </div>
+                                    <small class="text-body-secondary d-flex gap-2"><span
+                                            class="badge d-flex align-items-center p-1 pe-2 text-primary-emphasis bg-primary-subtle border border-primary-subtle rounded-pill">
+                                            CSS
+                                        </span><span
+                                            class="badge d-flex align-items-center p-1 pe-2 text-success-emphasis bg-success-subtle  border border-success-subtle rounded-pill">
+                                            Bootstrap
+                                        </span><span
+                                            class="badge d-flex align-items-center p-1 pe-2 text-warning-emphasis bg-warning-subtle  border border-warning-subtle rounded-pill">
+                                            JavaScript
+                                        </span></small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="contacte" class="border-top container-xxl py-5">
+        <div class="row">
+            <div class="col-lg-7 col-md-8 mx-auto p-5 text-center bg-body-tertiary rounded-3">
+                <h1 class="fw-light" id="titolContacte">Vols contactar-me?</h1>
+
+                <p class="lh-base fw-light fs-5  text-body-secondary text-start" id="text1Contacte"> Si estàs buscant
+                    una professional
+                    apassionada, compromesa i amb ganes d’aportar valor, parlem-ne.</p>
+                <p class="lh-base fw-light fs-5  text-body-secondary text-start" id="text2Contacte"> Em trobaràs
+                    disposada a explorar noves
+                    oportunitats, projectes i col·laboracions que representin un repte i em permetin créixer.</p>
+
+                <p class="lh-base fw-light fs-5  text-body-secondary text-start no-decorated"><a
+                        class="text-body-secondary text-decoration-none" href="mailto:lorenaalvarezm.cv@gmail.com"
+                        target="_blank" id="emailContacte"><i class="bi bi-envelope-open fs-4"></i>
+                        Correu
+                        electrònic</a></p>
+                <p class="lh-base fw-light fs-5  text-body-secondary text-start" id="linkedinContacte"><a
+                        class="text-body-secondary text-decoration-none"
+                        href="https://www.linkedin.com/in/lorena-alvarez/" target="_blank"><i
+                            class="bi bi-linkedin fs-4"></i>
+                        LinkedIn</a>:
+                    Connecta amb mi per veure la
+                    meva trajectòria i projectes recents.
+                </p>
+                <p id="text3Contacte" class="lh-base fw-light fs-5  text-body-secondary text-start">Cada proposta o idea
+                    és una oportunitat
+                    de
+                    construir junts. Escriu-me i estaré encantada de parlar amb tu!</p>
+            </div>
+        </div>
+    </section>
+    <section id="peu">
+        <div class="container">
+            <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+                <div class="col-md-4 d-flex align-items-center">
+                    <a href="#" class="mb-3 me-2 mb-md-0 text-body-secondary text-decoration-none lh-1">
+                        <img src="../images/logoLoreAlv.png" alt="LoreAlv" height="40px">
+                    </a>
+                    </a>
+                    <span class="mb-3 mb-md-0 text-body-secondary"><span
+                            class="alice-regular juntitoPeque">LoreAlv</span> © 2025</span>
+                </div>
+
+                <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+                    <li class="ms-3"><a class="text-body-secondary fs-4"
+                            href="https://www.linkedin.com/in/lorena-alvarez/" target="_blank"><i
+                                class="bi bi-linkedin"></i></a></li>
+                    <li class="ms-3"><a class="text-body-secondary fs-4" href="https://github.com/LoreAlv"
+                            target="_blank"><i class="bi bi-github"></i></a></li>
+                    <li class="ms-3"><a class="text-body-secondary fs-4"
+                            href="https://bsky.app/profile/lore-alv.bsky.social" target="_blank"><i
+                                class="fa-brands fa-bluesky "></i></a></li>
+
+                </ul>
+            </footer>
+        </div>
+    </section>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
         crossorigin="anonymous"></script>

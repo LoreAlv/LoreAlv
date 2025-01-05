@@ -1,3 +1,17 @@
+.alice-regular {
+    font-family: "Alice", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.juntito {
+    letter-spacing: -4px;
+}
+
+.juntitoPeque {
+    letter-spacing: -2px;
+}
+
 #menu {
     background-color: #ffc470;
 }
@@ -25,8 +39,12 @@
 }
 
 #btn-back-to-top {
+    z-index: 99;
     opacity: 0.5;
-    z-index: 0;
+}
+
+.superior {
+    z-index: 99;
 }
 
 #btn-back-to-top:hover,

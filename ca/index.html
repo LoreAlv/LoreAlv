@@ -7,34 +7,18 @@
     <title>Portfoli de LoreAlv</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="../css/style.css">
     <script src="../js/sesion.js"></script>
     <script>
-        document.addEventListener('DOMContentLoaded', (event) => {
-            const htmlElement = document.documentElement;
-            const switchElement = document.getElementById('darkModeSwitch');
-
-            // Set the default theme to dark if no setting is found in local storage
-            const currentTheme = localStorage.getItem('bsTheme') || 'dark';
-            htmlElement.setAttribute('data-bs-theme', currentTheme);
-            switchElement.checked = currentTheme === 'dark';
-
-            switchElement.addEventListener('change', function () {
-                if (this.checked) {
-                    htmlElement.setAttribute('data-bs-theme', 'dark');
-                    localStorage.setItem('bsTheme', 'dark');
-                } else {
-                    htmlElement.setAttribute('data-bs-theme', 'light');
-                    localStorage.setItem('bsTheme', 'light');
-                }
-            });
-        });
     </script>
 </head>
 
 <body>
-    <div class="position-fixed">
+    <div class="position-fixed superior">
         <!-- Back to top button -->
         <a href="#menu" class="btn btn-danger btn-lg position-fixed mx-2 my-2 bottom-0 end-0  rounded-circle"
             id="btn-back-to-top">
@@ -128,7 +112,7 @@
                         <li class="nav-item col-6 col-lg-auto">
                             <a class="nav-link py-2 px-0 px-lg-2 fs-4"
                                 href="https://bsky.app/profile/lore-alv.bsky.social" target="_blank" rel="noopener">
-                                <i class="bi bi-twitter"></i>
+                                <i class="fa-brands fa-bluesky"></i>
                                 <small class="d-lg-none ms-2">Bluesky</small>
                             </a>
                         </li>
@@ -159,37 +143,106 @@
             </div>
         </div>
     </section>
-    <section id="qui">
-        <div class="container my-5">
-            <div class="p-5 text-center bg-body-tertiary rounded-3">
+    <section id="qui" class="text-center border-top container-xxl py-5">
+        <div class="row">
+            <div class="col-lg-7 col-md-8 mx-auto p-5 text-center bg-body-tertiary rounded-3">
                 <h1 class="fw-light">Qui sóc?</h1>
-                <p class="lead">Soc enginyera superior en informàtica per la FIB (UPC) i em dedico professionalment a
+                <p class="lead lh-base fw-light fs-5  text-body-secondary text-start">Soc enginyera superior en
+                    informàtica per la FIB (UPC) i em dedico professionalment a
                     fer
                     desenvolupaments WEB i Java</p>
             </div>
         </div>
     </section>
-    <section id="coneixements">
-        <div class="container my-5">
-            <div class="p-5 text-center bg-body-tertiary rounded-3">
+    <section id="coneixements" class="border-top container-xxl py-5">
+        <div class="row text-center">
+            <div class="col-lg-7 col-md-8 mx-auto p-5 text-center bg-body-tertiary rounded-3">
                 <h1 class="fw-light">Els meus coneixements</h1>
-                <p class="lead">Soc enginyera superior en informàtica per la FIB (UPC) i em dedico professionalment a
-                    fer
-                    desenvolupament WEB i Java</p>
+                <p class="lead lh-base fw-light fs-5  text-body-secondary text-start">M'encanta adquirir nous
+                    coneixements, experimentar i estudiar. Aquesta secció només parla del que he après al curs <b>"The
+                        Complete
+                        2024
+                        Web Development Bootcamp"</b> de la Dra. Angela Wu a Udemy potser en algun moment el podré
+                    ampliar amb els reals</p>
+            </div>
+        </div>
+        <div class="container  bg-body-tertiary">
+            <div class="row row-cols-1 row-cols-md-2 align-items-md-center g-5 py-5">
+                <div class="col d-flex flex-column align-items-start gap-2">
+                    <p class="lead lh-base fw-light fs-5  text-body-secondary text-start">Pots veure <em>quasi tots</em>
+                        els meus coneixements al meu perfil de LinkedIn. Realment he treballat amb més tecnologies. I si
+                        no, aprenc.</p>
+                    <a href="#" class="btn btn-primary btn-lg text-decoration-none fs-6 fw-light"
+                        href="https://www.linkedin.com/in/lorena-alvarez/" target="_blank"><i
+                            class="bi bi-linkedin fs-4"></i> anar-hi</a>
+                </div>
+
+                <div class="col">
+                    <div class="row row-cols-1 row-cols-sm-2 g-4">
+                        <div class="col d-flex flex-column gap-2">
+                            <div
+                                class="feature-icon-small d-inline-flex align-items-center justify-content-centerbg-gradient fs-4 ">
+                                <img src="../images/HTML5_Logo_128.png" alt="HTML5 logo" height="64px">
+                            </div>
+                            <h4 class="fw-semibold mb-0 text-body-emphasis fs-5">HTML5</h4>
+                            <p class="text-body-secondary fw-light  fs-6">La base de tota pàgina web, el llenguatge de
+                                marcatge
+                                estàndard
+                                per a
+                                la creació de pàgines web.</p>
+                            </p>
+                        </div>
+                        <div class="col d-flex flex-column gap-2">
+                            <div
+                                class="feature-icon-small d-inline-flex align-items-center justify-content-centerbg-gradient fs-4 ">
+                                <img src="../images/CSS3_logo_and_wordmark.svg.png" alt="CSS3 logo" height="64px">
+                            </div>
+                            <h4 class="fw-semibold mb-0 text-body-emphasis fs-5">CSS3</h4>
+                            <p class="text-body-secondary fw-light fs-6">El maquillatge de les pàgines web, per fer-les
+                                útils,
+                                agradables i boniques als lectors.</p>
+                            </p>
+                        </div>
+                        <div class="col d-flex flex-column gap-2">
+                            <div
+                                class="feature-icon-small d-inline-flex align-items-center justify-content-centerbg-gradient fs-4 ">
+                                <img src="../images/JavaScript-logo.png" alt="Javascript Logo" height="64px">
+                            </div>
+                            <h4 class="fw-semibold mb-0 text-body-emphasis fs-5">Javascript</h4>
+                            <p class="text-body-secondary fw-light fs-6">El dinamisme de les pàgines web, la forma
+                                d'interactuar amb els usuaris
+                            </p>
+                            </p>
+                        </div>
+                        <div class="col d-flex flex-column gap-2">
+                            <div
+                                class="feature-icon-small d-inline-flex align-items-center justify-content-centerbg-gradient fs-4 ">
+                                <img src="../images/React-icon.svg.png" alt="React logo" height="64px">
+                            </div>
+                            <h4 class="fw-semibold mb-0 text-body-emphasis fs-5">React</h4>
+                            <p class="text-body-secondary fw-light fs-6">La llibreria de Javascript per a la creació
+                                d'interfícies d'usuari lleugeres i ràpides
+                            </p>
+                            </p>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
-    <section id="projectes" class="py-5 text-center container">
-        <div class="row py-lg-5">
-            <div class="col-lg-6 col-md-8 mx-auto">
+    <section id="projectes" class="text-center border-top container-xxl py-5">
+        <div class="row">
+            <div class="col-lg-7 col-md-8 mx-auto p-5">
                 <h1 class="fw-light">Projectes</h1>
-                <p class="lead text-body-secondary">Dins del curs "The Complete 2024 Web Development Bootcamp
-                    " de la dra. Angela Wu, s'inclou l'exercici de crear un portafoli personal amb els projectes del
+                <p class="lead lh-base fw-light fs-5  text-body-secondary text-start">Dins del curs <b>"The Complete
+                        2024
+                        Web Development Bootcamp"</b> impartit per la Dra. Angela Wu a Udemy, s'inclou l'exercici
+                    de crear un portafoli personal amb els projectes del
                     curs i altres coses que fem. Aquí en tenim un petit tastet:
                 </p>
             </div>
         </div>
-        <div class="album py-5 bg-body-tertiary">
+        <div class="album pb-5 bg-body-tertiary">
             <div class="container">
 
                 <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
@@ -200,19 +253,20 @@
                                 src="../courses/Complete Web Development Bootcamp 2024/10.3 Mondrian Project/snapshot.png"
                                 alt="Snapshot del projecte">
                             <div class="card-body">
-                                <p class="card-text">Replicar el quadre de Piet Mondrian "Composition with Red, Blue
+                                <p class="card-text lh-base fw-light fs-6  text-body-secondary ">Replicar el quadre de
+                                    Piet Mondrian "Composition with Red, Blue
                                     and
                                     Yellow" usant HTML, CSS i GRID</p>
                             </div>
                             <div class="card-footer">
                                 <div class="d-flex justify-content-between align-items-center">
                                     <div class="btn-group">
-                                        <a class="btn btn-sm btn-outline-secondary"
+                                        <a class="btn btn-sm btn-outline-secondary lh-base fw-light fs-7  text-body-secondary "
                                             href="../courses/Complete Web Development Bootcamp 2024/10.3 Mondrian Project/index.html">View</a>
 
                                     </div>
                                     <small class="text-body-secondary"><span
-                                            class="badge d-flex align-items-center p-1 pe-2 text-primary-emphasis bg-primary-subtle border border-primary-subtle rounded-pill">
+                                            class="badge d-flex align-items-center p-1 pe-2 text-primary-emphasis bg-primary-subtle  border border-primary-subtle rounded-pill">
                                             CSS
                                         </span></small>
                                 </div>
@@ -226,14 +280,15 @@
                                 src="../courses/Complete Web Development Bootcamp 2024/11.3 TinDog Project/snapshot.png"
                                 alt="Snapshot del projecte">
                             <div class="card-body">
-                                <p class="card-text">Projecte consistent a replicar una pàgina Web publicitària
+                                <p class="card-text lh-base fw-light fs-6  text-body-secondary">Projecte consistent a
+                                    replicar una pàgina Web publicitària
                                     d'aplicació amb suscripció
                                     usant HTML, CSS i Bootstrap</p>
                             </div>
                             <div class="card-footer">
                                 <div class="d-flex justify-content-between align-items-center">
                                     <div class="btn-group">
-                                        <a class="btn btn-sm btn-outline-secondary"
+                                        <a class="btn btn-sm btn-outline-primary lh-base fw-light fs-7  text-body-subtle-primary "
                                             href="../courses/Complete Web Development Bootcamp 2024/11.3 TinDog Project/index.html">View</a>
 
                                     </div>
@@ -250,8 +305,34 @@
             </div>
         </div>
     </section>
-    <section id="contacte">
-        hola
+    <section id="contacte" class="border-top container-xxl py-5">
+        <div class="row">
+            <div class="col-lg-7 col-md-8 mx-auto p-5 text-center bg-body-tertiary rounded-3">
+                <h1 class="fw-light">Vols contactar-me?</h1>
+
+                <p class="lh-base fw-light fs-5  text-body-secondary text-start"> Si estàs buscant una professional
+                    apassionada, compromesa i amb ganes d’aportar valor, parlem-ne.</p>
+                <p class="lh-base fw-light fs-5  text-body-secondary text-start"> Em trobaràs disposada a explorar noves
+                    oportunitats, projectes i col·laboracions que representin un repte i em permetin créixer.</p>
+
+                <p class="lh-base fw-light fs-5  text-body-secondary text-start no-decorated"><a
+                        class="text-body-secondary text-decoration-none" href="mailto:lorenaalvarezm.cv@gmail.com"
+                        target="_blank"><i class="bi bi-envelope-open fs-4"></i>
+                        Correu
+                        electrònic</a></p>
+                <p class="lh-base fw-light fs-5  text-body-secondary text-start"><a
+                        class="text-body-secondary text-decoration-none"
+                        href="https://www.linkedin.com/in/lorena-alvarez/" target="_blank"><i
+                            class="bi bi-linkedin fs-4"></i>
+                        LinkedIn</a>:
+                    Connecta amb mi per veure la
+                    meva trajectòria i projectes recents.
+                </p>
+                <p class="lh-base fw-light fs-5  text-body-secondary text-start">Cada proposta o idea és una oportunitat
+                    de
+                    construir junts. Escriu-me i estaré encantada de parlar amb tu!</p>
+            </div>
+        </div>
     </section>
     <section>
         <div class="container">
@@ -266,11 +347,13 @@
 
                 <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
                     <li class="ms-3"><a class="text-body-secondary fs-4"
-                            href="https://www.linkedin.com/in/lorena-alvarez/"><i class="bi bi-linkedin"></i></a></li>
-                    <li class="ms-3"><a class="text-body-secondary fs-4" href="https://github.com/LoreAlv"><i
-                                class="bi bi-github"></i></a></li>
+                            href="https://www.linkedin.com/in/lorena-alvarez/" target="_blank"><i
+                                class="bi bi-linkedin"></i></a></li>
+                    <li class="ms-3"><a class="text-body-secondary fs-4" href="https://github.com/LoreAlv"
+                            target="_blank"><i class="bi bi-github"></i></a></li>
                     <li class="ms-3"><a class="text-body-secondary fs-4"
-                            href="https://bsky.app/profile/lore-alv.bsky.social"><i class="bi bi-twitter"></i></a></li>
+                            href="https://bsky.app/profile/lore-alv.bsky.social" target="_blank"><i
+                                class="fa-brands fa-bluesky "></i></a></li>
 
                 </ul>
             </footer>
