@@ -1,19 +1,23 @@
-# Portfolio
+# Portfoli
 
-## Mi portafolio personal
-Creando la base para mi portfolio
+## El meu portafoli personal
+
+Creant la base pel meu portfoli personal
 
 ## Cursos
 
 ### \* The Complete 2024 Web Development Bootcamp
 
-Empezado en septiembre del 2024.
-HTML y CSS. Flex, grid y boostrap.
+Començat al setembre del 2024.
+HTML i CSS.
+Flex, grid i boostrap.
 
+## Modificacions
 
-## Modificaciones
+**07/01/2025** : pujada del meu portfoli pel curs C2024WDB
 
-**13/12/2024** : subida de proyectos interesantes anteriores realizados en el curso "The Complete 2024 Web Development Bootcamp"
+1. Mondrian project: replicar un quadre de Mondrian usant CSS i HTML
+2. TinDog: crear la pàgina comercial d'una app.
+3. Portfoli: la página que veus a index.html
 
-1. Mondrian project: replicar un cuadro de Mondrian usando CSS y HTML
-2. TinDog: crear la página comercial de una app.
+**13/12/2024** : pujada de projectes interessants anteriors realitzat al curs "The Complete 2024 Web Development Bootcamp"
