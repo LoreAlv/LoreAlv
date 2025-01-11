@@ -1,0 +1,362 @@
+[
+    {
+        "nombreCorto": "Excel TOTAL en 30 Días",
+        "nombre": "Excel TOTAL en 30 Días - Excel completo de Cero a Avanzado",
+        "horas": 37.5,
+        "instructor": "Federico Garay (Escuela directa)",
+        "finalizado": "21/10/2024",
+        "certificado": "http://ude.my/UC-de11a42c-1bd2-463a-8d4f-77498bfb77a0",
+        "tema": "Ofimática"
+    },
+    {
+        "nombreCorto": "React (Hooks y MERN)",
+        "nombre": "React: De cero a experto ( Hooks y MERN )",
+        "horas": 55,
+        "instructor": "Fernando Herrera ({d/t} - DevTalles)",
+        "finalizado": "23/02/2024",
+        "certificado": "http://ude.my/UC-14c44086-03cb-4393-8582-0970edd8b8e8/",
+        "tema": "Desarrollo"
+    },
+    {
+        "nombreCorto": "Essential Cooking Skills",
+        "nombre": "Essential Cooking Skills",
+        "horas": 1.5,
+        "instructor": "Viorel Copolovici",
+        "finalizado": "21/11/2024",
+        "certificado": "http://ude.my/UC-f0b1c290-8047-40d7-8ba9-4bccf101aff8",
+        "tema": "Personal"
+    },
+    {
+        "nombreCorto": "Influencia y Negociación",
+        "nombre": "Influencia y Negociación - Fundamentos de Liderazgo 3",
+        "horas": 1.5,
+        "instructor": "Jack Raifer Baruch & Oriana Oviedo Ojeda (Cultura52)",
+        "finalizado": "27/12/2024",
+        "certificado": "http://ude.my/UC-f8c02069-e865-4f24-87ab-25cf68e81e88/",
+        "tema": "Gestion"
+    },
+    {
+        "nombreCorto": "Administración del Tiempo",
+        "nombre": "Administración del Tiempo - Fundamentos de Liderazgo 2",
+        "horas": 2,
+        "instructor": "Jack Raifer Baruch & Oriana Oviedo Ojeda (Cultura52)",
+        "finalizado": "19/12/2024",
+        "certificado": "http://ude.my/UC-672a06d7-3b82-49e8-8a7d-6d447f98660d",
+        "tema": "Gestion"
+    },
+    {
+        "nombreCorto": "Comunicación",
+        "nombre": "Comunicación - Fundamentos de Liderazgo 1",
+        "horas": 1.5,
+        "instructor": "Jack Raifer Baruch & Oriana Oviedo Ojeda (Cultura52)",
+        "finalizado": "12/12/2024",
+        "certificado": "http://ude.my/UC-78487517-7085-4ea1-a6f5-1e6467c1227a",
+        "tema": "Gestion"
+    },
+    {
+        "nombreCorto": "Inteligencia Emocional en el Trabajo",
+        "nombre": "Inteligencia Emocional en el Trabajo: Aprende tus Emociones",
+        "horas": 1,
+        "instructor": "Leila Bulling Towne",
+        "finalizado": "02/12/2024",
+        "certificado": "http://ude.my/UC-132b52b6-e558-4713-95b4-06ed8a6edf90/",
+        "tema": "Gestion"
+    },
+    {
+        "nombreCorto": "Blogging & Content Writing Masterclass",
+        "nombre": "Viral Blogging 101: Blogging & Content Writing Masterclass",
+        "horas": 1,
+        "instructor": "Tyler Speegle",
+        "finalizado": "11/12/2024",
+        "certificado": "http://ude.my/UC-91ee8099-b423-46a7-bce8-777e4687fcf4/",
+        "tema": "Escritura"
+    },
+    {
+        "nombreCorto": "3x Traffic Without Ads",
+        "nombre": "Blogging For Business: 3x Traffic Without Ads",
+        "horas": 2.5,
+        "instructor": "Ali Mirza",
+        "finalizado": "04/11/2024",
+        "certificado": "http://ude.my/UC-79645923-185f-46bc-afd9-66a0cd0f637e/",
+        "tema": "Comercio"
+    },
+    {
+        "nombreCorto": "Máster Completo en Java de cero a experto",
+        "nombre": "Máster Completo en Java de cero a experto 2024",
+        "horas": 121,
+        "instructor": "Andrés Guzmán",
+        "finalizado": "21/03/2024",
+        "certificado": "http://ude.my/UC-bcbd3cb2-ff09-4131-87ab-c468f7fff16e/",
+        "tema": "Desarrollo"
+    },
+    {
+        "nombreCorto": "Happy Sleep",
+        "nombre": "Happy Sleep",
+        "horas": 0.5,
+        "instructor": "Romelia Rubio",
+        "finalizado": "28/05/2023",
+        "certificado": "http://ude.my/UC-c765dfd0-3091-48c6-a5e3-ce47ab27f560/",
+        "tema": "Personal"
+    },
+    {
+        "nombreCorto": "CAPCUT",
+        "nombre": "CAPCUT: Beginner Video Editing",
+        "horas": 6,
+        "instructor": "Nura Ali",
+        "finalizado": "04/09/2024",
+        "certificado": "http://ude.my/UC-6705c6a2-9c85-43f0-868a-e59d5c32c624/",
+        "tema": "Ofimática"
+    },
+    {
+        "nombreCorto": "Máster en JavaScript",
+        "nombre": "Máster en JavaScript: ECMAScript, Angular 9+, React, NodeJS",
+        "horas": 41.5,
+        "instructor": "Juan Fernando Urrego",
+        "finalizado": "25/07/2024",
+        "certificado": "http://ude.my/UC-7f2c2949-7b07-4143-a305-8272e394bcc6/",
+        "tema": "Desarrollo"
+    },
+    {
+        "nombreCorto": "English Pronunciation",
+        "nombre": "English Pronunciation | Sound Like a Native English Speaker",
+        "horas": 3,
+        "instructor": "Luke Priddy",
+        "finalizado": "27/07/2024",
+        "certificado": "http://ude.my/UC-f503b5a8-43b8-4d12-831b-2812384eca2f/",
+        "tema": "Idiomas"
+    },
+    {
+        "nombreCorto": "Google Analytics 4 (GA4)",
+        "nombre": "Google Analytics 4 (GA4) - 0% Humo",
+        "horas": 4.5,
+        "instructor": "Nicolás Bonjour",
+        "finalizado": "26/07/2024",
+        "certificado": "http://ude.my/UC-1d4fea75-027a-48d8-ab12-bc40f446ebe1/",
+        "tema": "Comercio"
+    },
+    {
+        "nombreCorto": "JavaScript Moderno",
+        "nombre": "JavaScript Moderno: Guía para dominar el lenguaje",
+        "horas": 20.5,
+        "instructor": "Fernando Herrera ({d/t} - DevTalles)",
+        "finalizado": "13/01/2024",
+        "certificado": "http://ude.my/UC-d90404f4-6a7f-41c0-875d-4ce160e5398b/",
+        "tema": "Desarrollo"
+    },
+    {
+        "nombreCorto": "Learn to Play Chess",
+        "nombre": "Learn to Play Chess: from a Novice to a Fierce Competitor",
+        "horas": 3.5,
+        "instructor": "Alex Davidovic",
+        "finalizado": "16/07/2024",
+        "certificado": "http://ude.my/UC-777a1113-fe0f-4cf1-b04b-36e7471b16e5/",
+        "tema": "Personal"
+    },
+    {
+        "nombreCorto": "Master en Inteligencia Emocional y Soft Skills",
+        "nombre": "Master en Inteligencia Emocional y Soft Skills YPD",
+        "horas": 11,
+        "instructor": "YPD Young Potential Development",
+        "finalizado": "02/09/2023",
+        "certificado": "http://ude.my/UC-5415c996-5ebf-48b3-a3c2-4a9fd80fd3a1/",
+        "tema": "Gestion"
+    },
+    {
+        "nombreCorto": "IELST Vocabulary",
+        "nombre": "IELST Step-by-step Mastering Vocabulary",
+        "horas": 7.5,
+        "instructor": "James Castleden",
+        "finalizado": "21/10/2024",
+        "certificado": "http://ude.my/",
+        "tema": "Idiomas"
+    },
+    {
+        "nombreCorto": "Lectura Rápida, Súper Lectura y Foto Lectura",
+        "nombre": "Súper Cerebro: Lectura Rápida, Súper Lectura y Foto Lectura",
+        "horas": 14,
+        "instructor": "N.C. Kurt",
+        "finalizado": "17/07/2024",
+        "certificado": "http://ude.my/UC-082f61ba-8bc1-41f1-89c9-8c92c6a85dc6/",
+        "tema": "Personal"
+    },
+    {
+        "nombreCorto": "Fotografía móvil",
+        "nombre": "Fotografía móvil: tomar y editar fotos como un experto",
+        "horas": 2.5,
+        "instructor": "Bernardo Carignano",
+        "finalizado": "06/07/2024",
+        "certificado": "http://ude.my/UC-75f9a7d3-cdb3-4d48-a35d-b51a860f5cea/",
+        "tema": "Personal"
+    },
+    {
+        "nombreCorto": "American English Pronunciation",
+        "nombre": "American English Pronunciation",
+        "horas": 3,
+        "instructor": "Luke Priddy",
+        "finalizado": "28/06/2024",
+        "certificado": "http://ude.my/UC-3c00d1db-f63b-4ccd-acfb-28657388963e/",
+        "tema": "Idiomas"
+    },
+    {
+        "nombreCorto": "Escuela de JavaScript 2023",
+        "nombre": "Escuela de JavaScript 2023 - De cero a Master en JavaScript",
+        "horas": 15.5,
+        "instructor": "Alex Roel ChB",
+        "finalizado": "10/07/2023",
+        "certificado": "http://ude.my/UC-968088cc-0165-4ea2-b194-01a2cc4e6531/",
+        "tema": "Desarrollo"
+    },
+    {
+        "nombreCorto": "Foto Lectura",
+        "nombre": "Foto Lectura - Lectura Rápida de Máxima Velocidad.",
+        "horas": 6,
+        "instructor": "N.C. Kurt",
+        "finalizado": "17/06/2024",
+        "certificado": "http://ude.my/UC-1057d6b7-3c2c-448b-90d8-f76e24bb7013/",
+        "tema": "Personal"
+    },
+    {
+        "nombreCorto": "ChatGPT Crash Course",
+        "nombre": "ChatGPT Crash Course: Introduction to ChatGPT for Work",
+        "horas": 2,
+        "instructor": "Jacob Coccari",
+        "finalizado": "08/06/2023",
+        "certificado": "http://ude.my/UC-e26e2e0f-54c3-44f5-bfe1-7d592644879b/",
+        "tema": "Desarrollo"
+    },
+    {
+        "nombreCorto": "Visual Studio Code for Developers 2024",
+        "nombre": "Visual Studio Code for Developers 2024: Beginner to Advanced",
+        "horas": 9,
+        "instructor": "Estefania Cassingena Navone",
+        "finalizado": "15/03/2024",
+        "certificado": "http://ude.my/UC-4aeb03f4-8a68-419b-ad3f-ae0d46bdc7c9/",
+        "tema": "Desarrollo"
+    },
+    {
+        "nombreCorto": "More Essential Cooking Skills",
+        "nombre": "More Essential Cooking Skills",
+        "horas": 2,
+        "instructor": "Viorel Copolovici",
+        "finalizado": "09/01/2025",
+        "certificado": "http://ude.my/UC-07a79eba-abea-4aa3-a75b-2ee38ce47f6d/",
+        "tema": "Personal"
+    },
+    {
+        "nombreCorto": "GIT+GitHub",
+        "nombre": "GIT+GitHub: Todo un sistema de control de versiones de cero",
+        "horas": 12,
+        "instructor": "Fernando Herrera ({d/t} - DevTalles)",
+        "finalizado": "06/02/2024",
+        "certificado": "http://ude.my/UC-52942583-c88c-4bc6-b7ba-acf03e715fb4/",
+        "tema": "Desarrollo"
+    },
+    {
+        "nombreCorto": "Certificado de PNL Para Principiantes y Avanzados",
+        "nombre": "Certificado de PNL Para Principiantes y Avanzados",
+        "horas": 10,
+        "instructor": "David Bejarano",
+        "finalizado": "02/08/2023",
+        "certificado": "http://ude.my/UC-6371b640-3ada-4058-8d83-5718439e8d1b/",
+        "tema": "Gestion"
+    },
+    {
+        "nombreCorto": "Introducción al Testing de Software",
+        "nombre": "Introducción al Testing de Software: para Principiantes!",
+        "horas": 3,
+        "instructor": "Natalia Luna",
+        "finalizado": "01/03/2024",
+        "certificado": "http://ude.my/UC-58c66b15-570f-4139-a7d5-15a6a38a9a93/",
+        "tema": "Desarrollo"
+    },
+    {
+        "nombreCorto": "60+ Herramientas de desarrollo y diseño web",
+        "nombre": "60+ Herramientas de desarrollo y diseño web",
+        "horas": 8,
+        "instructor": "Fernando Herrera ({d/t} - DevTalles)",
+        "finalizado": "27/12/2023",
+        "certificado": "http://ude.my/UC-71981450-4469-42d2-8589-82bbb00b5ee4/",
+        "tema": "Desarrollo"
+    },
+    {
+        "nombreCorto": "Aprende Git y GitHub",
+        "nombre": "Aprende Git y GitHub: El control de versiones de la A a la Z",
+        "horas": 9,
+        "instructor": "María Santos",
+        "finalizado": "15/11/2023",
+        "certificado": "http://ude.my/UC-d5137443-c222-4e8d-a41c-c56a1069a511/",
+        "tema": "Desarrollo"
+    },
+    {
+        "nombreCorto": "Building Your English Brain",
+        "nombre": "Building Your English Brain",
+        "horas": 3,
+        "instructor": "Luke Priddy",
+        "finalizado": "11/10/2023",
+        "certificado": "http://ude.my/UC-efa1a0dc-9c36-44ae-92bc-b601eb002468/",
+        "tema": "Idiomas"
+    },
+    {
+        "nombreCorto": "Growing Microgreens",
+        "nombre": "Growing Microgreens for Business and Pleasure",
+        "horas": 1.5,
+        "instructor": "Alex Field",
+        "finalizado": "03/09/2023",
+        "certificado": "http://ude.my/UC-a8b088ee-85af-4053-84ed-d2e2a2fe7dc0/",
+        "tema": "Personal"
+    },
+    {
+        "nombreCorto": "A Beginners Guide to Indoor Gardening",
+        "nombre": "Houseplants 101: A Beginners Guide to Indoor Gardening",
+        "horas": 1,
+        "instructor": "Tyler Welsh",
+        "finalizado": "03/09/2023",
+        "certificado": "http://ude.my/UC-4a116ab8-c03b-40ff-a88f-3914b39847a6/",
+        "tema": "Personal"
+    },
+    {
+        "nombreCorto": "English Vocabulary",
+        "nombre": "English Vocabulary - SAT, GRE, GMAT, TOEFL",
+        "horas": 1.5,
+        "instructor": "Don't Memorise",
+        "finalizado": "29/05/2023",
+        "certificado": "http://ude.my/UC-13019271-02d7-43ff-a463-38e1caeda1c8/",
+        "tema": "Idiomas"
+    },
+    {
+        "nombreCorto": "Aprende todo sobre Notion",
+        "nombre": "Aprende todo sobre Notion: 3 cursos en 1",
+        "horas": 5,
+        "instructor": "Jordi Leyva",
+        "finalizado": "19/05/2023",
+        "certificado": "http://ude.my/UC-3cf57e0c-0ddc-4105-a110-b09fd4f6babd/",
+        "tema": "Ofimática"
+    },
+    {
+        "nombreCorto": "Chocolate Masterclass: Chocolate Course by Master Chef",
+        "nombre": "Chocolate Masterclass: Chocolate Course by Master Chef",
+        "horas": 1.5,
+        "instructor": "Sandy Gomezcoello",
+        "finalizado": "08/05/2023",
+        "certificado": "http://ude.my/UC-c7f4ec8d-26fe-4aeb-94bc-d269d8e10a18/",
+        "tema": "Personal"
+    },
+    {
+        "nombreCorto": "The Complete ChatGPT Web Development Code Along - Javascript",
+        "nombre": "The Complete ChatGPT Web Development Code Along - Javascript",
+        "horas": 3.5,
+        "instructor": "Clarian North",
+        "finalizado": "23/03/2023",
+        "certificado": "http://ude.my/UC-397e6baa-7a51-4a3e-a472-3d8225a6011e/",
+        "tema": "Desarrollo"
+    },
+    {
+        "nombreCorto": "Basic English Grammar And Structures",
+        "nombre": "Basic English Grammar And Structures",
+        "horas": 6.5,
+        "instructor": "Seçkin Esen & Akın Demir",
+        "finalizado": "11/03/2023",
+        "certificado": "http://ude.my/UC-73cd9b01-c743-42fd-9252-b83f22b5ae69/",
+        "tema": "Idiomas"
+    }
+]

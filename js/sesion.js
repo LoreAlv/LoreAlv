@@ -53,6 +53,7 @@ function marcarIdioma(language, inicial) {
     idiomaActual.classList.add("disabled");
     idiomaActual.classList.add("text-bg-primary");
     idiomaActual.setAttribute("aria-disabled", "true");
+    document.querySelector("#menuIdioma").innerHTML = idiomaActual.innerHTML;
     idiomaActual.innerHTML = idiomaActual.innerHTML + ' <i class="bi bi-check idiomacheck"></i>';
 }
 
@@ -68,47 +69,16 @@ async function renderPage(lang) {
 
     document.title = texts[lang].title;
     document.documentElement.lang = lang;
-
-    document.getElementById("menuQui").innerHTML = texts[lang].menuQui;
-    document.getElementById("menuConeixements").innerHTML = texts[lang].menuConeixements;
-    document.getElementById("menuProjectes").innerHTML = texts[lang].menuProjectes;
-    document.getElementById("menuContacte").innerHTML = texts[lang].menuContacte;
-    document.getElementById("menuIdioma").innerHTML = texts[lang].menuIdioma;
-
-    document.getElementById("presentacioPortada").innerHTML = texts[lang].presentacioPortada;
-    document.getElementById("adalt").innerHTML = texts[lang].adalt;
-
-    document.getElementById("titolQui").innerHTML = texts[lang].titolQui;
-    document.getElementById("textQui").innerHTML = texts[lang].textQui;
-
-    document.getElementById("titolContacte").innerHTML = texts[lang].titolContacte;
-    document.getElementById("text1Contacte").innerHTML = texts[lang].text1Contacte;
-    document.getElementById("text2Contacte").innerHTML = texts[lang].text2Contacte;
-    document.getElementById("text3Contacte").innerHTML = texts[lang].text3Contacte;
-    document.getElementById("emailContacte").innerHTML = texts[lang].emailContacte;
-    document.getElementById("linkedinContacte").innerHTML = texts[lang].linkedinContacte;
-
-    document.getElementById("titolConeixements").innerHTML = texts[lang].titolConeixements;
-    document.getElementById("textPrincipalConeixements").innerHTML = texts[lang].textPrincipalConeixements;
-    document.getElementById("textLateralConeixements").innerHTML = texts[lang].textLateralConeixements;
-    document.getElementById("botoConeixments").innerHTML = texts[lang].botoConeixments;
-    document.getElementById("htmlConeixements").innerHTML = texts[lang].htmlConeixements;
-    document.getElementById("cssConeixements").innerHTML = texts[lang].cssConeixements;
-    document.getElementById("jsConeixements").innerHTML = texts[lang].jsConeixements;
-    document.getElementById("reactConeixements").innerHTML = texts[lang].reactConeixements;
-    document.getElementById("bsConeixements").innerHTML = texts[lang].bsConeixements;
-
-    document.getElementById("titolProjectes").innerHTML = texts[lang].titolProjectes;
-    document.getElementById("textProjectes").innerHTML = texts[lang].textProjectes;
     document.querySelectorAll(".botoProjectes").forEach((button) => (button.textContent = texts[lang].botoProjectes));
-    document.getElementById("textProjecte1").innerHTML = texts[lang].textProjecte1;
-    document.getElementById("textProjecte2").innerHTML = texts[lang].textProjecte2;
-    document.getElementById("textProjecte3").innerHTML = texts[lang].textProjecte3;
 
-    document.getElementById("menuIdioma").innerHTML = texts[lang].menuIdioma;
-    document.getElementById("menuIdioma").innerHTML = texts[lang].menuIdioma;
-    document.getElementById("menuIdioma").innerHTML = texts[lang].menuIdioma;
+    for (const key in texts[lang]) {
+        ponTexto(key, texts[lang][key]);
+    }
 }
+
+const ponTexto = (id, texto) => {
+    if (document.getElementById(id)) document.getElementById(id).innerHTML = texto;
+};
 
 const temaDefecto = "light";
 let tema = "light";
