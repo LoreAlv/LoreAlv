@@ -14,6 +14,7 @@ Flex, grid i boostrap.
 
 ## Modificacions
 
+**11/01/2025** : afegir cursos acabats d'udemy amb els seus certificats
 **07/01/2025** : pujada del meu portfoli pel curs C2024WDB
 
 1. Mondrian project: replicar un quadre de Mondrian usant CSS i HTML

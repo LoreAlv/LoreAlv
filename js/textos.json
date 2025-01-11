@@ -1,11 +1,11 @@
 {
     "ca": {
         "title": "Portfoli de LoreAlv",
-        "menuQui": "Qui sóc?",
-        "menuConeixements": "Coneixements",
-        "menuProjectes": "Projectes",
-        "menuContacte": "Contacta'm",
-        "menuIdioma": "Idioma",
+        "menuQui": "<i class=\"bi bi-person-raised-hand\"></i> Qui sóc?",
+        "menuConeixements": "<i class=\"bi bi-archive\"></i> Coneixements",
+        "menuProjectes": "<i class=\"bi bi-briefcase\"></i> Projectes",
+        "menuContacte": "<i class=\"bi bi-phone\"></i> Contacta'm",
+        "menuCursos": "<i class=\"bi bi-backpack\"></i> Cursos",
 
         "presentacioPortada": "<em>Crea el teu camí, <br>impulsa els teus somnis,<br> inspira el món.</em>",
         "adalt": "Tornar a dalt",
@@ -35,15 +35,29 @@
         "botoProjectes": "Veure",
         "textProjecte1": "Replicar el quadre de Piet Mondrian \"Composition with Red, Blue and Yellow\" usant HTML, CSS i GRID.",
         "textProjecte2": "Projecte consistent a replicar una pàgina web publicitària d'aplicació amb subscripció usant HTML, CSS i Bootstrap.",
-        "textProjecte3": "Aquesta és la pàgina que estàs veient ara mateix. Està feta amb HTML, CSS, Bootstrap i JavaScript."
+        "textProjecte3": "Aquesta és la pàgina que estàs veient ara mateix. Està feta amb HTML, CSS, Bootstrap i JavaScript.",
+
+        "titolCursos": "Cursos",
+        "textCursos": "Aquí pots veure els cursos que he completat a Udemy. Si vols més informació sobre els cursos que he realitzat, pots visitar el meu perfil de <a class=\"text-decoration-none\" href=\"https://www.linkedin.com/in/lorena-alvarez/\" target=\"_blank\"><i class=\"bi bi-linkedin fs-4\"></i> LinkedIn</a>.",
+        "deCursos": "de ",
+        "certificatCursos": "Veure certificat",
+        "temaCursos": "Tema",
+        "finalitzatCursos": "Finalitzat el",
+        "horasCursos": " hores",
+        "cursDesenv": "Desenvolupament Software",
+        "cursIdioma": "Idiomes",
+        "cursGestio": "Gestió i lideratge",
+        "cursOfimatica": "Ofimàtica i ús de software",
+        "cursComer": "Màrqueting i comerç electrònic",
+        "cursPersonal": "Desenvolupament personal"
     },
     "en": {
         "title": "LoreAlv's Portfolio",
-        "menuQui": "About Me",
-        "menuConeixements": "Skills",
-        "menuProjectes": "Projects",
-        "menuContacte": "Contact Me",
-        "menuIdioma": "Language",
+        "menuQui": "<i class=\"bi bi-person-raised-hand\"></i> About Me",
+        "menuConeixements": "<i class=\"bi bi-archive\"></i> Skills",
+        "menuProjectes": "<i class=\"bi bi-briefcase\"></i> Projects",
+        "menuContacte": "<i class=\"bi bi-phone\"></i> Contact Me",
+        "menuCursos": "<i class=\"bi bi-backpack\"></i> Courses",
 
         "presentacioPortada": "<em>Create your path, <br>pursue your dreams,<br> inspire the world.</em>",
         "adalt": "Back to top",
@@ -73,15 +87,29 @@
         "botoProjectes": "View",
         "textProjecte1": "Recreate Piet Mondrian's painting \"Composition with Red, Blue and Yellow\" using HTML, CSS, and GRID.",
         "textProjecte2": "A project replicating a subscription-based app's promotional web page using HTML, CSS, and Bootstrap.",
-        "textProjecte3": "This is the webpage you're currently viewing. It was built with HTML, CSS, Bootstrap, and JavaScript."
+        "textProjecte3": "This is the webpage you're currently viewing. It was built with HTML, CSS, Bootstrap, and JavaScript.",
+
+        "titolCursos": "Courses",
+        "textCursos": "Here you can see the courses I have completed on Udemy. For more information about the courses I've taken, you can visit my <a class=\"text-decoration-none\" href=\"https://www.linkedin.com/in/lorena-alvarez/\" target=\"_blank\"><i class=\"bi bi-linkedin fs-4\"></i> LinkedIn</a> profile.",
+        "deCursos": "from ",
+        "certificatCursos": "View certificate",
+        "temaCursos": "Topic",
+        "finalitzatCursos": "Completed on",
+        "horasCursos": " hours",
+        "cursDesenv": "Software Development",
+        "cursIdioma": "Languages",
+        "cursGestio": "Management and Leadership",
+        "cursOfimatica": "Office Automation and Software Use",
+        "cursComer": "Marketing and E-commerce",
+        "cursPersonal": "Personal Development"
     },
     "es": {
         "title": "Portafolio de LoreAlv",
-        "menuQui": "¿Quién soy?",
-        "menuConeixements": "Conocimientos",
-        "menuProjectes": "Proyectos",
-        "menuContacte": "Contáctame",
-        "menuIdioma": "Idioma",
+        "menuQui": "<i class=\"bi bi-person-raised-hand\"></i> ¿Quién soy?",
+        "menuConeixements": "<i class=\"bi bi-archive\"></i> Conocimientos",
+        "menuProjectes": "<i class=\"bi bi-briefcase\"></i> Proyectos",
+        "menuContacte": "<i class=\"bi bi-phone\"></i> Contáctame",
+        "menuCursos": "<i class=\"bi bi-backpack\"></i> Cursos",
 
         "presentacioPortada": "<em>Crea tu camino, <br>impulsa tus sueños,<br> inspira al mundo.</em>",
         "adalt": "Ir arriba",
@@ -111,6 +139,20 @@
         "botoProjectes": "Ver",
         "textProjecte1": "Recrear el cuadro de Piet Mondrian \"Composition with Red, Blue and Yellow\" usando HTML, CSS y GRID.",
         "textProjecte2": "Proyecto consistente en replicar una página web publicitaria de aplicación con suscripción usando HTML, CSS y Bootstrap.",
-        "textProjecte3": "Esta es la página que estás viendo ahora mismo. Está hecha con HTML, CSS, Bootstrap y JavaScript."
+        "textProjecte3": "Esta es la página que estás viendo ahora mismo. Está hecha con HTML, CSS, Bootstrap y JavaScript.",
+
+        "titolCursos": "Cursos",
+        "textCursos": "Aquí puedes ver los cursos que he completado en Udemy. Si quieres más información sobre los cursos que he realizado, puedes visitar mi perfil de <a class=\"text-decoration-none\" href=\"https://www.linkedin.com/in/lorena-alvarez/\" target=\"_blank\"><i class=\"bi bi-linkedin fs-4\"></i> LinkedIn</a>.",
+        "deCursos": "de ",
+        "certificatCursos": "Ver certificado",
+        "temaCursos": "Tema",
+        "finalitzatCursos": "Finalizado el",
+        "horasCursos": " horas",
+        "cursDesenv": "Desarrollo de Software",
+        "cursIdioma": "Idiomas",
+        "cursGestio": "Gestión y liderazgo",
+        "cursOfimatica": "Ofimática y uso de software",
+        "cursComer": "Marketing y comercio electrónico",
+        "cursPersonal": "Desarrollo personal"
     }
 }
