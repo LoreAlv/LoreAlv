@@ -44,12 +44,12 @@
         "temaCursos": "Tema",
         "finalitzatCursos": "Finalitzat el",
         "horasCursos": " hores",
-        "cursDesenv": "Desenvolupament Software",
+        "cursDesenv": "Desenvolupament",
         "cursIdioma": "Idiomes",
-        "cursGestio": "Gestió i lideratge",
-        "cursOfimatica": "Ofimàtica i ús de software",
-        "cursComer": "Màrqueting i comerç electrònic",
-        "cursPersonal": "Desenvolupament personal"
+        "cursGestio": "Gestió i<br> lideratge",
+        "cursOfimatica": "Ofimàtica i<br> ús de software",
+        "cursComer": "Màrqueting i<br> e-comerç",
+        "cursPersonal": "Desenvolupament<br> personal"
     },
     "en": {
         "title": "LoreAlv's Portfolio",
@@ -96,12 +96,12 @@
         "temaCursos": "Topic",
         "finalitzatCursos": "Completed on",
         "horasCursos": " hours",
-        "cursDesenv": "Software Development",
+        "cursDesenv": "Software <br>Development",
         "cursIdioma": "Languages",
-        "cursGestio": "Management and Leadership",
-        "cursOfimatica": "Office Automation and Software Use",
-        "cursComer": "Marketing and E-commerce",
-        "cursPersonal": "Personal Development"
+        "cursGestio": "Management &<br> Leadership",
+        "cursOfimatica": "Office &<br> other Software",
+        "cursComer": "Marketing &<br> E-commerce",
+        "cursPersonal": "Personal <br>Development"
     },
     "es": {
         "title": "Portafolio de LoreAlv",
@@ -148,11 +148,11 @@
         "temaCursos": "Tema",
         "finalitzatCursos": "Finalizado el",
         "horasCursos": " horas",
-        "cursDesenv": "Desarrollo de Software",
+        "cursDesenv": "Desarrollo",
         "cursIdioma": "Idiomas",
-        "cursGestio": "Gestión y liderazgo",
-        "cursOfimatica": "Ofimática y uso de software",
-        "cursComer": "Marketing y comercio electrónico",
-        "cursPersonal": "Desarrollo personal"
+        "cursGestio": "Gestión y<br> liderazgo",
+        "cursOfimatica": "Ofimática y<br> software",
+        "cursComer": "Marketing y<br> e-comerce",
+        "cursPersonal": "Desarrollo <br> personal"
     }
 }
