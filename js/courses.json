@@ -1,5 +1,23 @@
 [
     {
+        "nombreCorto": "Kids Yoga Teacher Training Certificate Course",
+        "nombre": "Kids Yoga Teacher Training Certificate Course - Ages 2-17",
+        "horas": 2.5,
+        "instructor": "Jessica Fleming",
+        "finalizado": "05/11/2024",
+        "certificado": "http://ude.my/UC-8ea06a97-afd4-4066-a9c9-488b0ec968f0/",
+        "tema": "Personal"
+    },
+    {
+        "nombreCorto": "Empoderamiento y Delegación",
+        "nombre": "Empoderamiento y Delegación - Fundamentos de Liderazgo 4",
+        "horas": 1,
+        "instructor": "Jack Raifer Baruch & Oriana Oviedo Ojeda (Cultura52)",
+        "finalizado": "16/01/2025",
+        "certificado": "http://ude.my/UC-abb42f36-7b60-43b8-97c4-2a6acfa076f3/",
+        "tema": "Gestion"
+    },
+    {
         "nombreCorto": "Excel TOTAL en 30 Días",
         "nombre": "Excel TOTAL en 30 Días - Excel completo de Cero a Avanzado",
         "horas": 37.5,
@@ -69,7 +87,7 @@
         "instructor": "Tyler Speegle",
         "finalizado": "11/12/2024",
         "certificado": "http://ude.my/UC-91ee8099-b423-46a7-bce8-777e4687fcf4/",
-        "tema": "Escritura"
+        "tema": "Comercio"
     },
     {
         "nombreCorto": "3x Traffic Without Ads",
@@ -163,11 +181,11 @@
     },
     {
         "nombreCorto": "IELST Vocabulary",
-        "nombre": "IELST Step-by-step Mastering Vocabulary",
-        "horas": 7.5,
+        "nombre": "IELTS Step-by-step Mastering Vocabulary",
+        "horas": 9.5,
         "instructor": "James Castleden",
-        "finalizado": "21/10/2024",
-        "certificado": "http://ude.my/",
+        "finalizado": "11/04/2024",
+        "certificado": "http://ude.my/UC-ccc5d60f-48b7-41db-9a97-0f57ff4393f5",
         "tema": "Idiomas"
     },
     {
