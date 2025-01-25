@@ -9,9 +9,16 @@ async function renderPageCursos(lang) {
     textos = await loadFitxer("./js/textos.json");
 
     if (document.getElementById("cursosContainer")) document.getElementById("cursosContainer").innerHTML = "";
+    const filtre = document.querySelectorAll("#filtreCursos button");
+    filtre.forEach((element) => {
+        element.innerHTML =
+            element.innerHTML + '<span style="z-index:99" class="position-absolute top-0 start-100 translate-middle badge rounded-pill  bg-warning text-black-50">0</span>';
+    });
     cursos.sort(compareFn);
     cursos.forEach((element) => {
         ponCurso(element, lang);
+        let numCursos = document.querySelector(`#curs${element.tema} span`);
+        numCursos.innerHTML = parseInt(numCursos.innerHTML) + 1;
     });
 }
 

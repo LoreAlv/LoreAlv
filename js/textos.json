@@ -44,11 +44,11 @@
         "temaCursos": "Tema",
         "finalitzatCursos": "Finalitzat el",
         "horasCursos": " hores",
-        "cursDesenv": "Desenvolupament",
-        "cursIdioma": "Idiomes",
-        "cursGestio": "Gestió i<br> lideratge",
-        "cursOfimatica": "Ofimàtica i<br> ús de software",
-        "cursComer": "Màrqueting i<br> e-comerç",
+        "cursDesarrollo": "Desenvolupament",
+        "cursIdiomas": "Idiomes",
+        "cursGestion": "Gestió i<br> lideratge",
+        "cursOfimática": "Ofimàtica i<br> ús de software",
+        "cursComercio": "Màrqueting i<br> e-comerç",
         "cursPersonal": "Desenvolupament<br> personal"
     },
     "en": {
@@ -96,11 +96,11 @@
         "temaCursos": "Topic",
         "finalitzatCursos": "Completed on",
         "horasCursos": " hours",
-        "cursDesenv": "Software <br>Development",
-        "cursIdioma": "Languages",
-        "cursGestio": "Management &<br> Leadership",
-        "cursOfimatica": "Office &<br> other Software",
-        "cursComer": "Marketing &<br> E-commerce",
+        "cursDesarrollo": "Software <br>Development",
+        "cursIdiomas": "Languages",
+        "cursGestion": "Management &<br> Leadership",
+        "cursOfimática": "Office &<br> other Software",
+        "cursComercio": "Marketing &<br> E-commerce",
         "cursPersonal": "Personal <br>Development"
     },
     "es": {
@@ -148,11 +148,11 @@
         "temaCursos": "Tema",
         "finalitzatCursos": "Finalizado el",
         "horasCursos": " horas",
-        "cursDesenv": "Desarrollo",
-        "cursIdioma": "Idiomas",
-        "cursGestio": "Gestión y<br> liderazgo",
-        "cursOfimatica": "Ofimática y<br> software",
-        "cursComer": "Marketing y<br> e-comerce",
+        "cursDesarrollo": "Desarrollo",
+        "cursIdiomas": "Idiomas",
+        "cursGestion": "Gestión y<br> liderazgo",
+        "cursOfimática": "Ofimática y<br> software",
+        "cursComercio": "Marketing y<br> e-comerce",
         "cursPersonal": "Desarrollo <br> personal"
     }
 }
