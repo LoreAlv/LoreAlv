@@ -373,7 +373,12 @@
                         pintaTiempo();
                         console.log(forms[index] + ": " + aux);
                         //  ?form=ml11z9&crea=ml11z9&wt.mc_id=ml11z9&rnoreward=1&rnoreward=1
-                        openedWindow = window.open(`https://www.bing.com/search?q=${aux}+meaning&form=${forms[index]}`, "blank");
+                        //detectar si es mobile o desktop
+                        let isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
+                        if (!isMobile)
+                            openedWindow = window.open(`https://www.bing.com/search?q=${aux}+meaning&form=${forms[index]}`, "blank");
+                        else
+                            openedWindow = window.open(`https://www.bing.com/search?q=${aux}+meaning&form=${forms[index]}&crea=${forms[index]}&wt.mc_id=${forms[index]}&rnoreward=1&rnoreward=1`, "_blank");
                         // const openedWindow = window.open(`https://www.bing.com/search?q=${aux}&form=EDNT`, "_blank");
                         // const openedWindow = window.open(`https://www.bing.com/search?q=${aux}+&FORM=QSRE1`, "_blank");
                         await sleep(wt);
