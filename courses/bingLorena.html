@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bing Rewards</title>
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet" type="text/css" />
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: "Lato", sans-serif;
+            background-color: #232121;
+            color: blanchedalmond;
+        }
+
+        #container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            flex-direction: column;
+        }
+
+        #marcador {
+            border: 3px solid greenyellow;
+            background-color: #040404;
+            width: 600px;
+            height: 150px;
+            margin-bottom: 50px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        #texto {
+            text-align: center;
+            margin: 20px;
+            color: blanchedalmond;
+            font-size: 50px;
+            font-family: "Roboto", sans-serif;
+        }
+
+        #TiempoInicio {
+            text-align: right;
+            margin-top: 5px;
+            margin-right: 5px;
+            color: cadetblue;
+            font-size: 12px;
+            font-family: "Roboto", sans-serif;
+        }
+
+        #Tiempo {
+            text-align: center;
+            margin-top: 5px;
+            margin-right: 5px;
+            color: chartreuse;
+            font-size: 12px;
+            font-family: "Roboto", sans-serif;
+        }
+
+        button {
+            background-color: #4CAF50;
+            /* Green */
+            border: none;
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 20px;
+            cursor: pointer;
+            border-radius: 12px;
+        }
+
+        .inp {
+            display: flex;
+            flex-direction: column;
+            margin: 20px;
+            gap: 10px;
+        }
+
+        input {
+            padding: 10px;
+            border-radius: 12px;
+            border: 1px solid #4CAF50;
+            width: 60px;
+            text-align: right;
+            font-weight: bold;
+            font-size: 14px;
+        }
+
+        .dbtn {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="container">
+        <div id="marcador">
+            <div id="TiempoInicio"></div>
+            <div id="texto">Sin iniciar</div>
+            <div id="Tiempo"></div>
+        </div>
+        <div id="title">
+            <fieldset>
+                <legend> Bing Rewards </legend>
+                <div class="inp">
+                    <label for="userInput">Segundos de espera mínimos entre búsqueda y búsqueda (Por defecto
+                        25s)</label>
+                    <input type="number" id="userInput" placeholder="Segundos de espera" value="25" max="100"
+                        maxlength="3" required min="1" />
+                    <label for="numPal">Número de palabras a buscar</label>
+                    <input type="number" id="numPal" placeholder="Palabra a buscar" value="35" max="100" maxlength="3"
+                        required min="1" />
+                </div>
+                <div class="dbtn">
+                    <button class="btn" onclick="newTab()">A buscar</button>
+                    <button class="btn" onclick="stop()">Parar</button>
+                </div>
+            </fieldset>
+        </div>
+    </div>
+
+    <script>
+        let inicio, final;
+        window.addEventListener("load", function () {
+            setTimeout(function () {
+                window.scrollTo(0, 0);
+            }, 100);
+        });
+        let parar = false;
+        function shuffleArray(array) {
+            for (let i = array.length - 1; i > 0; i--) {
+                const j = Math.floor(Math.random() * (i + 1));
+                [array[i], array[j]] = [array[j], array[i]];
+            }
+        }
+
+        function stop() {
+            final = new Date().getTime();
+            parar = true;
+            document.getElementById("texto").innerHTML = "Parado correctamente";
+            pintaTiempo();
+        }
+        function sleep(ms) {
+            return new Promise((resolve) => setTimeout(resolve, ms));
+        }
+
+        async function newTab() {
+            pintaTiempo();
+            inicio = new Date().getTime();
+            document.getElementById("TiempoInicio").innerHTML = `Inicio: ${new Date().toLocaleTimeString()}`;
+            final = null;
+            parar = false;
+            const userInput = document.getElementById("userInput").value;
+            const palabras = document.getElementById("numPal").value;
+            const warn = document.getElementById("#warn");
+            let flag = 0;
+            let wt = parseInt(userInput) * 1000;
+            // console.log(wt) // Parse the user's input as a number
+            if (isNaN(wt)) {
+                warn.innerHTML = "Please enter a number";
+                flag = 1;
+            }
+            if (wt < 1000) {
+                warn.innerHTML = "Please enter a number greater than 1";
+                flag = 1;
+            }
+
+            wt += Math.floor(Math.random() * 100000)
+            if (flag == 1) {
+                return;
+            } else {
+                let words = [];
+                try {
+                    //const response = await fetch("words.json");
+                    //      words = await response.json();
+                    words = [
+                        "the",
+                        "of",
+                        "to",
+                        "a",
+                        "and",
+                        "in",
+                        "for",
+                        "is",
+                        "on",
+                        "that",
+                        "by",
+                        "this",
+                        "with",
+                        "i",
+                        "you",
+                        "it",
+                        "not",
+                        "or",
+                        "be",
+                        "are",
+                        "from",
+                        "at",
+                        "as",
+                        "your",
+                        "all",
+                        "have",
+                        "new",
+                        "more",
+                        "an",
+                        "was",
+                        "we",
+                        "will",
+                        "home",
+                        "can",
+                        "us",
+                        "about",
+                        "if",
+                        "page",
+                        "my",
+                        "has",
+                        "search",
+                        "free",
+                        "but",
+                        "our",
+                        "one",
+                        "other",
+                        "do",
+                        "no",
+                        "information",
+                        "time",
+                        "they",
+                        "site",
+                        "he",
+                        "up",
+                        "may",
+                        "what",
+                        "which",
+                        "their",
+                        "news",
+                        "out",
+                        "use",
+                        "any",
+                        "there",
+                        "see",
+                        "only",
+                        "so",
+                        "his",
+                        "when",
+                        "contact",
+                        "here",
+                        "business",
+                        "who",
+                        "web",
+                        "also",
+                        "now",
+                        "help",
+                        "get",
+                        "pm",
+                        "view",
+                        "online",
+                        "costum",
+                        "elephant",
+                        "first",
+                        "am",
+                        "been",
+                        "would",
+                        "how",
+                        "were",
+                        "me",
+                        "sorry",
+                        "services",
+                        "some",
+                        "these",
+                        "click",
+                        "its",
+                        "like",
+                        "service",
+                        "exuberante",
+                        "than",
+                        "find",
+                        "price",
+                        "date",
+                        "back",
+                        "top",
+                        "people",
+                        "had",
+                        "list",
+                        "name",
+                        "just",
+                        "over",
+                        "state",
+                        "year",
+                        "day",
+                        "into",
+                        "email",
+                        "two",
+                        "health",
+                        "naturally",
+                        "world",
+                        "restart",
+                        "next",
+                        "used",
+                        "go",
+                        "bolder",
+                        "work",
+                        "last",
+                        "most",
+                        "products",
+                        "music",
+                        "buy",
+                        "data",
+                        "make",
+                        "them",
+                        "should",
+                        "product",
+                        "system",
+                        "post",
+                        "her",
+                        "city",
+                        "takashi",
+                        "add",
+                        "policy",
+                        "number",
+                        "such",
+                        "please",
+                        "available",
+                        "copyright",
+                        "support",
+                        "message",
+                        "after",
+                        "best",
+                        "software",
+                        "then",
+                        "jan",
+                        "good",
+                        "video",
+                        "well",
+                        "dido",
+                        "where",
+                        "info",
+                        "rights",
+                        "public",
+                        "books",
+                        "high",
+                        "school",
+                        "through",
+                        "mummy",
+                        "each",
+                        "links",
+                        "she",
+                        "review",
+                        "years",
+                        "order",
+                    ];
+                    let forms = ['LBT003', 'EDNT', 'QSRE1', 'ANNTA1', 'QBNT', 'ml11z9', 'R5FD1']
+                    shuffleArray(words);
+
+                    let openedWindow;
+                    for (let i = 1; i <= palabras && !parar; i++) {
+                        let longitud = Math.floor(Math.random() * 3) + 1;
+                        let aux = "";
+                        for (let j = 0; j < longitud; j++) {
+                            let index = Math.floor(Math.random() * words.length);
+                            aux += `+${words[index]}`;
+                        }
+                        let index = Math.floor(Math.random() * forms.length);
+                        document.getElementById("texto").innerHTML = "Faltan " + (palabras - i);
+                        pintaTiempo();
+                        console.log(forms[index] + ": " + aux);
+                        //  ?form=ml11z9&crea=ml11z9&wt.mc_id=ml11z9&rnoreward=1&rnoreward=1
+                        openedWindow = window.open(`https://www.bing.com/search?q=${aux}+meaning&form=${forms[index]}`, "blank");
+                        // const openedWindow = window.open(`https://www.bing.com/search?q=${aux}&form=EDNT`, "_blank");
+                        // const openedWindow = window.open(`https://www.bing.com/search?q=${aux}+&FORM=QSRE1`, "_blank");
+                        await sleep(wt);
+                        // console.log(openWindow)
+                    }
+                    document.getElementById("texto").innerHTML = "Finalizado";
+
+                    if (openedWindow) {
+                        openedWindow.close();
+                    }
+                } catch (error) {
+                    document.getElementById("texto").innerHTML = "Error";
+                    console.error("Error:", error);
+                }
+                final = new Date().getTime();
+                pintaTiempo();
+            }
+        }
+        function pintaTiempo() {
+            let tiempo = new Date().getTime() - inicio;
+            if (final) {
+                tiempo = final - inicio;
+            }
+            let minutos = Math.floor(tiempo / 60000);
+            let segundos = Math.floor((tiempo % 60000) / 1000);
+            document.getElementById("Tiempo").innerHTML = `Tiempo: ${minutos}m ${segundos}s`;
+        }
+    </script>
+</body>
+
+</html>
