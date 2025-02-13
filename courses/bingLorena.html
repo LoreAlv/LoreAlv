@@ -377,8 +377,12 @@
                         let isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
                         if (!isMobile)
                             openedWindow = window.open(`https://www.bing.com/search?q=${aux}+meaning&form=${forms[index]}`, "blank");
-                        else
+                        else {
                             openedWindow = window.open(`https://www.bing.com/search?q=${aux}+meaning&form=${forms[index]}&crea=${forms[index]}&wt.mc_id=${forms[index]}&rnoreward=1&rnoreward=1`, "_blank");
+                            document.getElementById("texto").innerHTML = "Faltan " + (palabras - i);
+                            document.getElementById("#Tiempo").innerHTML = "movil";
+
+                        }
                         // const openedWindow = window.open(`https://www.bing.com/search?q=${aux}&form=EDNT`, "_blank");
                         // const openedWindow = window.open(`https://www.bing.com/search?q=${aux}+&FORM=QSRE1`, "_blank");
                         await sleep(wt);
