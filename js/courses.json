@@ -1,5 +1,14 @@
 [
     {
+        "nombreCorto": "Técnicas de cuchillo y cortes",
+        "nombre": "Técnicas de cuchillo y cortes",
+        "horas": 2,
+        "instructor": "Todounchef Gessen",
+        "finalizado": "01/08/2025",
+        "certificado": "http://ude.my/UC-9696a788-0097-43a5-8f53-ac0c433ea258/",
+        "tema": "Personal"
+    },
+    {
         "nombreCorto": "Reconocimiento y Realimentación",
         "nombre": "Reconocimiento y Realimentación - Fundamentos de Liderazgo 5",
         "horas": 1,
